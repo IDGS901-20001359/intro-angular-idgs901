@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './grupos/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './grupos/formularios/operas/operas.module';
+import { AlumnoFilterPipe } from './grupos/alumno-filter.pipe';
+import { CalificacionAlumComponent } from './grupos/calificacion-alum/calificacion-alum.component';
 
 
 
@@ -20,7 +22,9 @@ import { OperasModule } from './grupos/formularios/operas/operas.module';
     ievnComponent,
     IricComponent,
     MenuComponent,
-    SumaComponent
+    SumaComponent,
+    AlumnoFilterPipe,
+    CalificacionAlumComponent
   ],
   imports: [
     BrowserModule,

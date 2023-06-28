@@ -12,6 +12,7 @@ export class IricComponent {
   imageMargin:number=10;
   muestraImg:boolean=true;
   listFilter:string=''
+  alumnoTitle!:string
 
   showImage():void{
     //si esta en tru lo pone en false y si esta en false lo pone en true
@@ -24,22 +25,28 @@ export class IricComponent {
       nombre:'pedro',
       edad:23,
       correo:'pedro@gmail.com',
-      foto:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/1200px-Donald_Trump_official_portrait.jpg'
+      foto:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/1200px-Donald_Trump_official_portrait.jpg',
+      calif: 6.7
     },
     {
       matricula:12556,
       nombre:'paquita',
       edad:73,
       correo:'paquitaOficial@gmail.com',
-      foto:'https://www.ellaeonline.com/__export/1680547947160/sites/ellaeonline/img/2023/04/03/portada_paquita_la_del_barrio_x1x.jpg_1491194311.jpg'
+      foto:'https://www.ellaeonline.com/__export/1680547947160/sites/ellaeonline/img/2023/04/03/portada_paquita_la_del_barrio_x1x.jpg_1491194311.jpg',
+      calif: 4.8
     },
     {
       matricula:13776,
       nombre:'Myley Cyrus ',
       edad:27,
       correo:'cyrusOficial@gmail.com',
-      foto:'https://cdn.semana.es/wp-content/uploads/2021/10/miley-cyrus.jpg'
+      foto:'https://cdn.semana.es/wp-content/uploads/2021/10/miley-cyrus.jpg',
+      calif: 3.5
     },
   ]
 
+  onCalificaClick(message:string){
+    this.alumnoTitle=`alumnos ${message}`;
+  }
 }
